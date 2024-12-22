@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('./public/images/pascom.jpeg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+}
+
+.title {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.check-participant {
+    margin-bottom: 20px;
+}
+
+.check-participant label {
+    font-size: 1.1rem;
+    color: #333;
+}
+input {
+    padding: 10px;
+    font-size: 1rem;
+    width: 70%;
+    margin-right: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #0a3770;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #78b1d6;
+}
+
+.draw-section, .result-section {
+    margin-top: 20px;
+}
+
+#drawResult {
+    font-size: 1.2rem;
+    color: #161313;
+}
+
+#drawSection p{
+    font-size: 1.1rem;
+    color: #333;
+}
+
+#resultSection p {
+    font-size: 40px;
+    color: #333;    
+    font-weight: bold;
+}
+
+.btnSorteio {
+    margin-top: 20px;
+}
+
+.msg {
+    font-size: 1.1rem;
+    color: #333;
+    margin-top: 20px;
+    font-weight: bold;
+}

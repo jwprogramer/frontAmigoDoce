@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorteio do Amigo Doce</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Sorteio do Amigo Doce</h1>
+
+        <div id="checar" class="check-participant" style="display: block;">
+            <label for="participantName">Digite seu nome:</label>
+            <input type="text" id="participantName" placeholder="Ex: João da Silva">
+            
+        </div>
+        <div id="btnChecar" style="display: block;">
+            <button id="checkBtn" onclick="checkParticipant()">Verificar</button>
+        </div>
+
+        <div id="drawSection" class="draw-section" style="display: none;">
+            <p id="welcomeMessage"></p>  
+            <div class="btnSorteio">
+                <button id="drawBtn" onclick="startDraw()">Iniciar Sorteio</button>
+            </div>       
+        </div>
+        
+        <div id="resultSection" class="result-section" style="display: none;">
+            <p id="drawResult"></p>
+        </div>
+        <div>
+            <p id="msgPrint" class="msg" style="display: none;">Por favor, após o Sorteio, tire um Print! O site será recarregado em 10 segundos!!!</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
